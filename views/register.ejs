@@ -1,0 +1,18 @@
+<% include ./partials/header.ejs %>
+<div class="w-full min-h-screen bg-zinc-200 flex items-center justify-center ">
+    <div class="w-[35vw] h-[35vw] flex flex-col py-4 bg-black px-4 rounded-xl z-50 items-center ">
+        <img src="https://toppng.com/uploads/preview/twitter-x-icon-logo-116902890413xbfexhf8l.webp" class="w-[32px] h-[32px] mt-2" alt="">
+        <h1 class="text-4xl text-center mt-10 mb-10 text-white font-bold capitalize">Create Your account</h1>
+        <form action="/register" method="post" class="flex flex-col w-full px-8">
+            <!-- <label for="" class="text-white font-semibold">Enter your name:</label> -->
+            <input type="text" name="fullname" placeholder="fullname" class="block mt-3 w-full h-full py-2 px-4 font-semibold rounded-lg">
+            <input type="text" name="username" placeholder="username" class="block mt-3 w-full h-full py-2 px-4 font-semibold rounded-lg">
+            <input type="password" name="password" placeholder="password" class="block mt-3 w-full h-full px-4 py-2 font-semibold rounded-lg">
+            <input type="email" name="email" placeholder="email" class="block mt-3 w-full h-full py-2 px-4 font-semibold rounded-lg">
+            <input type="submit" value="NEXT" name="next" class="block mt-9 text-white w-full h-full py-2 px-4 font-bold rounded-lg bg-[#1D9BF0]">
+        </form>
+        <a href="/login" class="inline-block mt-3 text-sm font-semibold text-white text-center w-full">Login Existing Account?</a>
+
+    </div>
+</div>
+<% include ./partials/footer.ejs %>

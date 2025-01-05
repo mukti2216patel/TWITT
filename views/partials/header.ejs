@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css">
+
+<link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+
+<body>
+    <%if(nav===true){%>
+        <div class="w-full min-h-screen flex flex-row iteams-center  bg-black text-white">
+            <div class="w-1/4 min-h-full  flex flex-col gap-4 items-center ">
+                <img src="https://toppng.com/uploads/preview/twitter-x-icon-logo-116902890413xbfexhf8l.webp"
+                    class="w-[32px] h-[32px] mt-3 " alt="">
+                <ul class="flex flex-col gap-4">
+                    <li
+                        class="flex flex-row justify-start iteams-center px-2 py-2 gap-4  hover:bg-[#181818] hover:cursor-pointer   hover:rounded-xl">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32"
+                            fill="currentColor">
+                            <path
+                                d="M20 20C20 20.5523 19.5523 21 19 21H5C4.44772 21 4 20.5523 4 20V11L1 11L11.3273 1.6115C11.7087 1.26475 12.2913 1.26475 12.6727 1.6115L23 11L20 11V20ZM11 13V19H13V13H11Z">
+                            </path>
+                        </svg>
+                        <span class="text-xl font-bold block ">Home</span>
+                    </li>
+                    <li
+                        class="flex flex-row justify-start iteams-center px-2 py-2 gap-4 hover:bg-[#181818] hover:cursor-pointer   hover:rounded-xl">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32"
+                            fill="currentColor">
+                            <path
+                                d="M18.031 16.6168L22.3137 20.8995L20.8995 22.3137L16.6168 18.031C15.0769 19.263 13.124 20 11 20C6.032 20 2 15.968 2 11C2 6.032 6.032 2 11 2C15.968 2 20 6.032 20 11C20 13.124 19.263 15.0769 18.031 16.6168ZM16.0247 15.8748C17.2475 14.6146 18 12.8956 18 11C18 7.1325 14.8675 4 11 4C7.1325 4 4 7.1325 4 11C4 14.8675 7.1325 18 11 18C12.8956 18 14.6146 17.2475 15.8748 16.0247L16.0247 15.8748Z">
+                            </path>
+                        </svg>
+                        <span class="text-xl font-bold block ">Explore</span>
+                    </li>
+                    <li
+                        class="flex flex-row justify-start iteams-center px-2 py-2 gap-4 hover:bg-[#181818] hover:cursor-pointer   hover:rounded-xl">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32"
+                            fill="currentColor">
+                            <path
+                                d="M22 20H2V18H3V11.0314C3 6.04348 7.02944 2 12 2C16.9706 2 21 6.04348 21 11.0314V18H22V20ZM5 18H19V11.0314C19 7.14806 15.866 4 12 4C8.13401 4 5 7.14806 5 11.0314V18ZM9.5 21H14.5C14.5 22.3807 13.3807 23.5 12 23.5C10.6193 23.5 9.5 22.3807 9.5 21Z">
+                            </path>
+                        </svg>
+                        <span class="text-xl font-bold block ">Notification</span>
+                    </li>
+                    <li
+                        class="flex flex-row justify-start iteams-center px-2 py-2 gap-4 hover:bg-[#181818] hover:cursor-pointer   hover:rounded-xl">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32"
+                            fill="currentColor">
+                            <path
+                                d="M3 3H21C21.5523 3 22 3.44772 22 4V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3ZM20 7.23792L12.0718 14.338L4 7.21594V19H20V7.23792ZM4.51146 5L12.0619 11.662L19.501 5H4.51146Z">
+                            </path>
+                        </svg>
+                        <span class="text-xl font-bold block ">Message</span>
+                    </li>
+                    <li
+                        class="flex flex-row justify-start iteams-center px-2 py-2 gap-4 hover:bg-[#181818] hover:cursor-pointer   hover:rounded-xl">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32"
+                            fill="currentColor">
+                            <path
+                                d="M5 2C3.34315 2 2 3.34315 2 5V19C2 20.6569 3.34315 22 5 22H19C20.6569 22 22 20.6569 22 19V5C22 3.34315 20.6569 2 19 2H5ZM4 5C4 4.44772 4.44772 4 5 4H19C19.5523 4 20 4.44772 20 5V19C20 19.5523 19.5523 20 19 20H5C4.44772 20 4 19.5523 4 19V5ZM9.72318 18L16.5803 6H14.2768L7.41968 18H9.72318Z">
+                            </path>
+                        </svg>
+                        <span class="text-xl font-bold block ">Grok</span>
+                    </li>
+                    <li
+                        class="flex flex-row justify-start iteams-center px-2 py-2 gap-4 hover:bg-[#181818] hover:cursor-pointer   hover:rounded-xl material-icons-outlined">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32"
+                            fill="currentColor">
+                            <path
+                                d="M20 22H4C3.44772 22 3 21.5523 3 21V3C3 2.44772 3.44772 2 4 2H20C20.5523 2 21 2.44772 21 3V21C21 21.5523 20.5523 22 20 22ZM19 20V4H5V20H19ZM8 7H16V9H8V7ZM8 11H16V13H8V11ZM8 15H16V17H8V15Z">
+                            </path>
+                        </svg>
+                        <span class="text-xl font-bold block ">Lists</span>
+                    </li>
+                    <li
+                        class="flex flex-row justify-start iteams-center px-2 py-2 gap-4 hover:bg-[#181818] hover:cursor-pointer   hover:rounded-xl">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32"
+                            fill="currentColor">
+                            <path
+                                d="M2 22C2 17.5817 5.58172 14 10 14C14.4183 14 18 17.5817 18 22H16C16 18.6863 13.3137 16 10 16C6.68629 16 4 18.6863 4 22H2ZM10 13C6.685 13 4 10.315 4 7C4 3.685 6.685 1 10 1C13.315 1 16 3.685 16 7C16 10.315 13.315 13 10 13ZM10 11C12.21 11 14 9.21 14 7C14 4.79 12.21 3 10 3C7.79 3 6 4.79 6 7C6 9.21 7.79 11 10 11ZM18.2837 14.7028C21.0644 15.9561 23 18.752 23 22H21C21 19.564 19.5483 17.4671 17.4628 16.5271L18.2837 14.7028ZM17.5962 3.41321C19.5944 4.23703 21 6.20361 21 8.5C21 11.3702 18.8042 13.7252 16 13.9776V11.9646C17.6967 11.7222 19 10.264 19 8.5C19 7.11935 18.2016 5.92603 17.041 5.35635L17.5962 3.41321Z">
+                            </path>
+                        </svg>
+                        <span class="text-xl font-bold block ">Comunities</span>
+                    </li>
+                    <li
+                        class="flex flex-row justify-start iteams-center px-2 py-2 gap-4 hover:bg-[#181818] hover:cursor-pointer   hover:rounded-xl">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32"
+                            fill="currentColor">
+                            <path
+                                d="M8 2H1L9.26086 13.0145L1.44995 21.9999H4.09998L10.4883 14.651L16 22H23L14.3917 10.5223L21.8001 2H19.1501L13.1643 8.88578L8 2ZM17 20L5 4H7L19 20H17Z">
+                            </path>
+                        </svg>
+                        <span class="text-xl font-bold block ">Premium</span>
+                    </li>
+                    <li
+                        class="flex flex-row justify-start iteams-center px-2 py-2 gap-4 hover:bg-[#181818] hover:cursor-pointer   hover:rounded-xl">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32"
+                            fill="currentColor">
+                            <path
+                                d="M5 10C3.9 10 3 10.9 3 12C3 13.1 3.9 14 5 14C6.1 14 7 13.1 7 12C7 10.9 6.1 10 5 10ZM19 10C17.9 10 17 10.9 17 12C17 13.1 17.9 14 19 14C20.1 14 21 13.1 21 12C21 10.9 20.1 10 19 10ZM12 10C10.9 10 10 10.9 10 12C10 13.1 10.9 14 12 14C13.1 14 14 13.1 14 12C14 10.9 13.1 10 12 10Z">
+                            </path>
+                        </svg>
+                        <span class="text-xl font-bold block ">More</span>
+                    </li>
+    
+    
+    
+    
+                </ul>
+                <a href="/"
+                    class="text-white text-center font-bold py-2 bg-[#1D9BF0] w-[200px] h-[40px] rounded-full">Post</a>
+                <!-- <div class="border-2 w-[4px] h-full bg-zinc-400"></div> -->
+            </div>
+            <div class="min-h-full w-[1px] bg-gray-700"></div>
+    
+    
+            <div class="w-1/2 min-h-full  flex flex-col who ">
+                <div class="top flex items-center p-3 relative">
+                    <div class="absolute w-16 rounded-full h-[3px] bg-blue-500 bottom-0 left-[45%] z-10"></div>
+                    <div class="left bg-red-5001 w-full flex justify-center items-center font-bold text-lg">For you</div>
+                    <!-- <div class="right bg-green-5001 w-1/2 flex justify-center font-bold text-lg ">Following</div> -->
+                    
+                    
+                </div>
+                <div class="min-w-full h-[1px] bg-gray-700"></div>
+                
+            </div>
+            <div class="min-h-full w-[1px] bg-gray-700"></div>
+    
+    
+    
+    
+            <div class="w-1/3 min-h-full  flex flex-col gap-4  ">
+                <div class="sreach">
+                    <input type="text" class="w-2/3 rounded-full bg-[#16181c] text-white px-4 py-2 m-3"
+                        placeholder="search">
+                </div>
+                <div class="whats m-3 py-5 rounded-xl w-2/3 bg-[#16181c] space-y-3">
+                    <h1 class="text-xl  font-semibold px-3">Whats Happening</h1>
+                    <div class="item px-3 p-3 hover:bg-gray-800 cursor-pointer ">
+                        <div class="font-bold text-sm text-gray-200">
+                            Trending in India
+                        </div>
+                        <div class="font-bold">
+                            #Orry
+                        </div>
+                        <div class="font-bold text-sm text-gray-200">
+                            40.2k Posts
+                        </div>
+                    </div>
+                    <div class="item px-3 p-3 hover:bg-gray-800 cursor-pointer ">
+                        <div class="font-bold text-sm text-gray-200">
+                            Trending in India
+                        </div>
+                        <div class="font-bold">
+                            #Dance
+                        </div>
+                        <div class="font-bold text-sm text-gray-200">
+                            11.7k Posts
+                        </div>
+                    </div>
+                    <div class="item px-3 p-3 hover:bg-gray-800 cursor-pointer ">
+                        <div class="font-bold text-sm text-gray-200">
+                            Trending in India
+                        </div>
+                        <div class="font-bold">
+                            #Mukti
+                        </div>
+                        <div class="font-bold text-sm text-gray-200">
+                            51.3k Posts
+                        </div>
+                    </div>
+                    <div class="item px-3 p-3 hover:bg-gray-800 cursor-pointer ">
+                        <div class="font-bold text-sm text-gray-200">
+                            Trending in India
+                        </div>
+                        <div class="font-bold">
+                            #Web_Devlopemnt
+                        </div>
+                        <div class="font-bold text-sm text-gray-200">
+                            89.9k Posts
+                        </div>
+                    </div>
+    
+                </div>
+            </div>
+    
+        </div>
+        <%}%>
